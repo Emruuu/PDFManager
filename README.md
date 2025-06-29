@@ -43,7 +43,7 @@ lub uruchom PDFManager.exe, jeśli korzystasz z wersji skompilowanej.
 💾 (Opcjonalnie) zaznacz opcję zapisu pozostałych stron jako osobny plik
 ✅ Kliknij Rozdziel, aby utworzyć nowy PDF
 
-## 🌍 English Instructions
+# 🌍 English Instructions
 ⚡ Run the Program
 ```sh
 python main.py
