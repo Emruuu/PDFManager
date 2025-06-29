@@ -1,43 +1,77 @@
-# PDFManager
-Manager pdf przygotowany na własne potrzeby
+# 📄 PDFManager
 
-Program do łączenia i rozdzielania pdfów.
+**Prosty menedżer PDF do własnych potrzeb** – łączenie i rozdzielanie PDF w wygodnym GUI.
 
-Instrukcje użycia
+---
 
-Uruchom program.
-W interfejsie graficznym masz dwie zakładki:
+## 🚀 Funkcje
 
-Połącz PDFy:
-Dodaj pliki PDF, które chcesz połączyć.
-Usuń wybrane pliki, jeśli popełniłeś błąd.
-Użyj przycisków "Góra" i "Dół", aby zmienić kolejność plików.
-Kliknij "Połącz", aby połączyć pliki PDF.
+📌 Łączenie wielu plików PDF w jeden  
+📌 Rozdzielanie plików PDF na wybrane strony  
+📌 Możliwość zapisu pozostałych stron jako osobny plik  
+📌 Intuicyjny interfejs z wyborem języka (🇵🇱/🇬🇧)  
 
-Rozdziel PDF:
-Wybierz plik PDF do rozdzielenia.
-Podaj zakres stron, które chcesz rozdzielić (np. 1-3 lub pojedynczą stronę np. 8).
-Zaznacz opcję "Zapisz pozostałe strony jako osobny plik", jeśli chcesz zapisać resztę stron jako osobny plik PDF.
-Kliknij "Rozdziel", aby utworzyć nowy plik PDF zawierający wskazane strony. Jeśli zaznaczyłeś opcję zapisu pozostałych stron, zostaną one zapisane jako oddzielny plik PDF.
+---
 
-Program for combining and separating pdf.
+## 🖼️ Zrzuty ekranu
 
-Instructions for use
+| 🇵🇱 Wybór języka | ➕ Łączenie PDF | ✂️ Rozdzielanie PDF |
+|---|---|---|
+| ![Wybór języka](screenshots/language.png) | ![Łączenie PDF](screenshots/laczenie.png) | ![Rozdzielanie PDF](screenshots/rozdziel.png) |
 
-Run the program.
-In the graphical interface, you have two tabs:
+---
 
-Merge PDFs:
-Add the PDF files you want to combine.
-Delete the selected files if you made a mistake.
-Use the "Up" and "Down" buttons to change the order of the files.
-Click "Merge" to combine the PDF files.
+## 🛠️ Instrukcja użycia
 
-Split PDF:
-Select the PDF file to be separated.
-Enter the range of pages you want to separate (e.g. 1-3 or a single page e.g. 8).
-Check the "Save remaining pages as a separate file" option if you want to save the rest of the pages as a separate PDF file.
-Click "Split" to create a new PDF file containing the indicated pages. If you have checked the option to save the remaining pages, they will be saved as a separate PDF file.
+### ⚡ Uruchomienie
 
-Flags from: https://flagpedia.net
+```sh
+python main.py
+```
+lub uruchom PDFManager.exe, jeśli korzystasz z wersji skompilowanej.
 
+🗂️ Zakładki
+➕ Połącz PDFy
+📄 Dodaj pliki PDF, które chcesz połączyć
+🗑️ Usuń wybrane pliki, jeśli popełnisz błąd
+🔼🔽 Użyj przycisków Góra/Dół do zmiany kolejności
+✅ Kliknij Połącz, aby stworzyć scalony PDF
+
+✂️ Rozdziel PDF
+📄 Wybierz plik PDF do rozdzielenia
+🔢 Podaj zakres stron do wycięcia, np. 1-3 lub 8
+💾 (Opcjonalnie) zaznacz opcję zapisu pozostałych stron jako osobny plik
+✅ Kliknij Rozdziel, aby utworzyć nowy PDF
+
+🌍 English Instructions
+⚡ Run the Program
+```sh
+python main.py
+```
+or launch PDFManager.exe if using the compiled version.
+
+🗂️ Tabs
+➕ Merge PDFs
+📄 Add PDF files you want to merge
+🗑️ Remove files if needed
+🔼🔽 Use Up/Down buttons to adjust order
+✅ Click Merge to create a combined PDF
+
+✂️ Split PDF
+📄 Select the PDF file to split
+🔢 Enter the page range to extract, e.g., 1-3 or 8
+💾 (Optional) Check save remaining pages as a separate file
+✅ Click Split to generate the new PDF
+
+🏳️ Flags
+Flags from: flagpedia.net
+
+⚙️ Wymagania
+Python 3.x
+
+PyPDF2 (lub inne zależności z requirements.txt)
+
+Instalacja zależności
+```sh
+pip install -r requirements.txt
+```
